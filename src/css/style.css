@@ -2,5 +2,5 @@
 @import "utils/variables.css";
 @import "base/main.css";
 @import "base/media.css";
-@import "layout/header.css";
-@import "layout/footer.css";
+@import url("layout/header.css");
+@import "layout/footer.css";    

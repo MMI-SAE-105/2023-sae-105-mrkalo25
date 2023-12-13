@@ -1,14 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="/src/css/style.css">
-    <link rel="stylesheet" href="./public/icones/logo site.webp">
+    <link rel="icon" href="./public/icones/logo site.webp">
     <title>ARCHIARTZ</title>
 </head>
 <body>
-   
+    <header>
+        <div>
+            <img src="public/icones/logo site.svg" alt="logo site">
+            <p>ARCHIARTZ</p>
+            <img src="public/icones/ticket.svg" alt="billeterie logo">
+            <img class="menulogo" src="public/icones/menu.svg" alt="menu logo">
+            <img src="public/icones/ligne.svg" alt="ligne">
+        </div>
+    </header>
+    <main>
+        <h1>Découvrez l'architecture qui inspire votre monde</h1>
+        <button>
+            Nos horaires
+        </button>
+        <button>
+            Nos tarifs
+        </button>
+        <h2>
+            Du 13 avril au 23 juin 2024 À Fondation Cartier; 261 Bd Raspail, 75014 Paris
+        </h2>
+        <img src="public/icones/ligne.svg" alt="ligne">
+        <img src="public/img/raf1.webp" alt="image architecte">
+        <img src="public/icones/ligne.svg" alt="ligne">
+        <h3>La créativité en personne</h3>
+        <p>
+            Rafael Moneo est un célèbre architecte espagnol et lauréat du prix Pritzker 1996. Il est une figure emblématique de
+            l'architecture contemporaine. Né en 1937 à Tudela, en Espagne, Moneo a été largement salué pour sa capacité à mélanger
+            tradition et modernité dans ses créations architecturales
+        </p>
+        <button>
+            En savoir plus
+        </button>
+        <img src="public/icones/ligne.svg" alt="ligne">
+        <h3>Les différentes oeuvres</h3>
+        <div class="carrousel" x-ref="parent"
+            @scroll.debounce.250ms.passive="hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+            <div id="ecran-1" class="carrousel_ecran">
+                <figure>
+                    <img class="image" src="public/img/merida1.webp" alt="image ecran 1">
+                    <figcaption class="text">Une ancienne ville</figcaption>
+                </figure>
+                <button>En savoir plus</button>
+            </div>
+            <div id="ecran-2" class="carrousel_ecran">
+                <figure>
+                    <img class="image" src="public/img/bib1.webp" alt="image ecran 2">
+                    <figcaption class="text">L'espace de travail idéal</figcaption>
+                </figure>
+                <button>En savoir plus</button>
+            </div>
+            <div id="ecran-3" class="carrousel_ecran">
+                <figure>
+                    <img class="image" src="public/img/madrid1.webp" alt="image ecran 3">
+                    <figcaption class="text">La nature dans toute sa splendeur</figcaption>
+                </figure>
+                <button>En savoir plus</button>
+            </div>
+            <div id="ecran-4" class="carrousel_ecran">
+                <figure>
+                    <img class="image" src="public/img/houston1.webp" alt="image ecran 4">
+                    <figcaption class="text">Des fraises de bonne qualité</figcaption>
+                </figure>
+                <button>En savoir plus</button>
+            </div>
+            <div id="ecran-5" class="carrousel_ecran">
+                <figure>
+                    <img src="public/img/musmadrid1.webp" alt="image ecran 5">
+                    <figcaption class="text">Les fonds marins</figcaption>
+                </figure>
+                <button>En savoir plus</button>
+            </div>
+            <div id="ecran-6" class="carrousel_ecran">
+                <figure>
+                    <img class="image" src="public/img/gare1.webp" alt="image ecran 6">
+                    <figcaption class="text">La nature dans toute sa splendeur</figcaption>
+                </figure>
+                <button>En savoir plus</button>
+            </div>
+            <div id="ecran-7" class="carrousel_ecran">
+                <figure>
+                    <img class="image" src="public/img/davis1.webp" alt="image ecran 7">
+                    <figcaption class="text">Des fraises de bonne qualité</figcaption>
+                </figure>
+                <button>En savoir plus</button>
+            </div>
+            <div id="ecran-8" class="carrousel_ecran">
+                <figure>
+                    <img src="public/img/los1.webp" alt="image ecran 8">
+                    <figcaption class="text">Les fonds marins</figcaption>
+                </figure>
+                <button>En savoir plus</button>
+            </div>
+        </div>
+        <h3>De façon chronologique</h3>
+        <p>Houston</p>
+        <div>
+            <p>Houston</p>
+            <img src="public/img/houston1.webp" alt="image 1 frise">
+            <p>1900</p>
+            <img src="public/icones/Rectangle frise.svg" alt="rectancle frise">
+        </div>
+        <div>
+            <p>Mérida</p>
+            <img src="public/img/merida1.webp" alt="image 2 frise">
+            <p>1980</p>
+            <img src="public/icones/Rectangle frise.svg" alt="rectangle frise">
+        </div>
+        <div>
+            <p>Gare Atocha</p>
+            <img src="public/img/gare1.webp" alt="image 3 frise">
+            <p>1991</p>
+            <img src="public/icones/Rectangle frise.svg" alt="rectangle frise">
+        </div>
+        <div>
+            <p>Madrid</p>
+            <img src="public/img/musmadrid1.webp" alt="image 4 frise">
+            <p>1992</p>
+            <img src="public/icones/Rectangle frise.svg" alt="rectangle frise">
+        </div>
+        <div>
+            <p>Davis Museum</p>
+            <img src="public/img/davis1.webp" alt="image 5 frise">
+            <p>1993</p>
+            <img src="public/icones/Rectangle frise.svg" alt="rectangle frise">
+        </div>
+        <div>
+            <p>Cathédrale</p>
+            <img src="public/img/los1.webp" alt="image 6 frise">
+            <p>2002</p>
+            <img src="public/icones/Rectangle frise.svg" alt="rectangle frise">
+        </div>
+        <div>
+            <p>Maternité</p>
+            <img src="public/img/madrid1.webp" alt="image 7 frise">
+            <p>2003</p>
+            <img src="public/icones/Rectangle frise.svg" alt="rectangle frise">
+        </div>
+        <div>
+            <p>Bibliothèque</p>
+            <img src="public/img/bib1.webp" alt="image 8 frise">
+            <p>2008</p>
+        </div>
+        <footer>
+            <p>Suivez-nous</p>
+            <p>Nous contacter</p>
+            <div>
+                <img src="public/icones/logo site.svg" alt="logo site">
+                <p>ARCHIARTZ</p>
+            </div>
+            <div>
+                <img src="public/icones/ticket.svg" alt="billeterie">
+                <img src="public/icones/facebook 1.svg" alt="logo facebook">
+                <img src="public/icones/instagram 1.svg" alt="logo instagram">
+                <img src="public/icones/twitter 1.svg" alt="logo twitter">
+                <img src="public/icones/youtube 1.svg" alt="logo youtube">
+            </div>
+            
+        </footer>
+    </main>
 </body>
 </html>
