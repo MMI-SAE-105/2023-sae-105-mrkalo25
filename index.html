@@ -11,6 +11,34 @@
 <body>
     <header>
         <div>
+            <img src="public/icones/ticket.svg" alt="billeterie">
+            <img src="public/icones/croix.svg" alt="croix menu">
+            <ul>
+                <li>
+                    <a href="/">Oeuvre</a>
+                    <img src="public/icones/ligne.svg" alt="ligne">
+                </li>
+                <li>
+                    <a href="/">Nos horaires</a>
+                    <img src="public/icones/ligne.svg" alt="ligne">
+                </li>
+                <li>
+                    <a href="/">Nos Tarifs</a>
+                    <img src="public/icones/ligne.svg" alt="ligne">
+                </li>
+                <li>
+                    <a href="/">Contact</a>
+                    <img src="public/icones/ligne.svg" alt="">
+                </li>
+                <li>
+                    <img src="public/icones/facebook 1.svg" alt="icone facebook">
+                    <img src="public/icones/instagram 1.svg" alt="icone instagram">
+                    <img src="public/icones/twitter 1.svg" alt="icone twitter">
+                    <img src="public/icones/youtube 1.svg" alt="icone youtube">
+                </li>
+            </ul>
+        </div>
+        <div>
             <img src="public/icones/logo site.svg" alt="logo site">
             <p>ARCHIARTZ</p>
             <img src="public/icones/ticket.svg" alt="billeterie logo">
@@ -43,25 +71,24 @@
         </button>
         <img src="public/icones/ligne.svg" alt="ligne">
         <h3>Les différentes oeuvres</h3>
-        <div class="carrousel" x-ref="parent"
-            @scroll.debounce.250ms.passive="hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+        <div class="carrousel">
             <div id="ecran-1" class="carrousel_ecran">
                 <figure>
-                    <img class="image" src="public/img/merida1.webp" alt="image ecran 1">
+                    <img class="image" src="public/img/Mérida1.webp" alt="image ecran 1">
                     <figcaption class="text">Une ancienne ville</figcaption>
                 </figure>
                 <button>En savoir plus</button>
             </div>
             <div id="ecran-2" class="carrousel_ecran">
                 <figure>
-                    <img class="image" src="public/img/bib1.webp" alt="image ecran 2">
+                    <img class="image" src="public/img/bibliothèque1.webp" alt="image ecran 2">
                     <figcaption class="text">L'espace de travail idéal</figcaption>
                 </figure>
                 <button>En savoir plus</button>
             </div>
             <div id="ecran-3" class="carrousel_ecran">
                 <figure>
-                    <img class="image" src="public/img/madrid1.webp" alt="image ecran 3">
+                    <img class="image" src="public/img/maternité1.webp" alt="image ecran 3">
                     <figcaption class="text">La nature dans toute sa splendeur</figcaption>
                 </figure>
                 <button>En savoir plus</button>
@@ -75,14 +102,14 @@
             </div>
             <div id="ecran-5" class="carrousel_ecran">
                 <figure>
-                    <img src="public/img/musmadrid1.webp" alt="image ecran 5">
+                    <img src="public/img/madrid1.webp" alt="image ecran 5">
                     <figcaption class="text">Les fonds marins</figcaption>
                 </figure>
                 <button>En savoir plus</button>
             </div>
             <div id="ecran-6" class="carrousel_ecran">
                 <figure>
-                    <img class="image" src="public/img/gare1.webp" alt="image ecran 6">
+                    <img class="image" src="public/img/atocha1.webp" alt="image ecran 6">
                     <figcaption class="text">La nature dans toute sa splendeur</figcaption>
                 </figure>
                 <button>En savoir plus</button>
@@ -112,19 +139,19 @@
         </div>
         <div>
             <p>Mérida</p>
-            <img src="public/img/merida1.webp" alt="image 2 frise">
+            <img src="public/img/Mérida1.webp" alt="image 2 frise">
             <p>1980</p>
             <img src="public/icones/Rectangle frise.svg" alt="rectangle frise">
         </div>
         <div>
             <p>Gare Atocha</p>
-            <img src="public/img/gare1.webp" alt="image 3 frise">
+            <img src="public/img/atocha1.webp" alt="image 3 frise">
             <p>1991</p>
             <img src="public/icones/Rectangle frise.svg" alt="rectangle frise">
         </div>
         <div>
             <p>Madrid</p>
-            <img src="public/img/musmadrid1.webp" alt="image 4 frise">
+            <img src="public/img/madrid1.webp" alt="image 4 frise">
             <p>1992</p>
             <img src="public/icones/Rectangle frise.svg" alt="rectangle frise">
         </div>
@@ -148,7 +175,7 @@
         </div>
         <div>
             <p>Bibliothèque</p>
-            <img src="public/img/bib1.webp" alt="image 8 frise">
+            <img src="public/img/bibliothèque1.webp" alt="image 8 frise">
             <p>2008</p>
         </div>
         <footer>
