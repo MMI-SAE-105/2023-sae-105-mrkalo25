@@ -6,6 +6,7 @@
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="icon" href="./public/icones/logosite.svg">
+    <link rel="stylesheet" href="src/css/font/font.css">
     <title>ARCHIARTZ</title>
 </head>
 <body x-data="{menuIsOpen: false}">
@@ -68,86 +69,93 @@
     </header>
     <img src="public/icones/ligne.svg" alt="ligne">
     <main>
-        <h1>Découvrez l'architecture qui inspire votre monde</h1>
-        <a href="/">
+        <h1 class="titre">Découvrez l'architecture qui inspire votre monde</h1>
+        <button class="boutonhead1" href="/">
             Nos horaires
-        </a>
-        <a href="/">
+        </button>
+        <button class="boutonhead2" href="/">
             Nos tarifs
-        </a>
-        <h2>
+        </button>
+        <h2 class="date">
             Du 13 avril au 23 juin 2024 À Fondation Cartier; 261 Bd Raspail, 75014 Paris
         </h2>
-        <img src="public/icones/ligne.svg" alt="ligne">
-        <img src="public/img/raf1.webp" alt="image architecte">
-        <img src="public/icones/ligne.svg" alt="ligne">
-        <h3>La créativité en personne</h3>
-        <p>
+        <img class="ligneb" src="public/icones/ligne.svg" alt="ligne">
+        <img class="imageplein" src="public/img/raf1.webp" alt="image architecte">
+        <h2 class="soustitre">La créativité en personne</h2>
+        <p class="textebody">
             Rafael Moneo est un célèbre architecte espagnol et lauréat du prix Pritzker 1996. Il est une figure emblématique de
             l'architecture contemporaine. Né en 1937 à Tudela, en Espagne, Moneo a été largement salué pour sa capacité à mélanger
             tradition et modernité dans ses créations architecturales
         </p>
-        <button>
+        <button class="boutonsavoir1">
             En savoir plus
         </button>
+        <img class="ligneb" src="public/icones/ligne.svg" alt="ligne">
         <img src="public/icones/ligne.svg" alt="ligne">
-        <h2>Les différentes oeuvres</h2>
+        <h2 class="soustitre">Les différentes oeuvres</h2>
         <div class="carrousel">
-            <div id="ecran-1" class="carrousel_ecran">
-                <figure>
-                    <img class="image" src="public/img/Mérida1.webp" alt="image ecran 1">
-                    <figcaption class="text">Une ancienne ville</figcaption>
-                </figure>
-                <button>En savoir plus</button>
-            </div>
-            <div id="ecran-2" class="carrousel_ecran">
-                <figure>
-                    <img class="image" src="public/img/bibliothèque1.webp" alt="image ecran 2">
-                    <figcaption class="text">L'espace de travail idéal</figcaption>
-                </figure>
-                <button>En savoir plus</button>
-            </div>
-            <div id="ecran-3" class="carrousel_ecran">
-                <figure>
-                    <img class="image" src="public/img/maternité1.webp" alt="image ecran 3">
-                    <figcaption class="text">La nature dans toute sa splendeur</figcaption>
-                </figure>
-                <button>En savoir plus</button>
-            </div>
-            <div id="ecran-4" class="carrousel_ecran">
-                <figure>
-                    <img class="image" src="public/img/houston1.webp" alt="image ecran 4">
-                    <figcaption class="text">Des fraises de bonne qualité</figcaption>
-                </figure>
-                <button>En savoir plus</button>
-            </div>
-            <div id="ecran-5" class="carrousel_ecran">
-                <figure>
-                    <img src="public/img/madrid1.webp" alt="image ecran 5">
-                    <figcaption class="text">Les fonds marins</figcaption>
-                </figure>
-                <button>En savoir plus</button>
-            </div>
-            <div id="ecran-6" class="carrousel_ecran">
-                <figure>
-                    <img class="image" src="public/img/atocha1.webp" alt="image ecran 6">
-                    <figcaption class="text">La nature dans toute sa splendeur</figcaption>
-                </figure>
-                <button>En savoir plus</button>
-            </div>
-            <div id="ecran-7" class="carrousel_ecran">
-                <figure>
-                    <img class="image" src="public/img/davis1.webp" alt="image ecran 7">
-                    <figcaption class="text">Des fraises de bonne qualité</figcaption>
-                </figure>
-                <button>En savoir plus</button>
-            </div>
-            <div id="ecran-8" class="carrousel_ecran">
-                <figure>
-                    <img src="public/img/los1.webp" alt="image ecran 8">
-                    <figcaption class="text">Les fonds marins</figcaption>
-                </figure>
-                <button>En savoir plus</button>
+            <div class="carrousel" x-data="{
+                    hrefCourant: '#ecran-1' 
+                }">
+                <button class="carrousel_btn carrousel_btn-avant" aria-label="slideprécedant"
+                    @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth">
+                    &lt
+                </button>
+                <button class="carrousel_btn carrousel_btn-apres" aria-label="slidesuivant"
+                    @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">
+                    &gt
+                </button>
+                <div class="carrousel_parent-ecrans" x-ref="parent"
+                    @scroll.debounce.250ms.passive="hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+                    <div id="ecran-1" class="carrousel_ecran">
+                        <a class="liencarous" href="./article1.html">
+                            <img class="imagecar" src="public/img/Mérida1.webp"  alt="image ecran 1">
+                            <figcaption>Fenêtre sur l'Empire Antique</figcaption>
+                        </a>
+                    </div>
+                    <div id="ecran-2" class="carrousel_ecran">
+                        <a class="liencarous" href="./article2.html">
+                            <img class="imagecar" src="public/img/bibliothèque1.webp" alt="image ecran 2">
+                            <figcaption>Un Sanctuaire de Connaissances</figcaption>
+                        </a>
+                    </div>
+                    <div id="ecran-3" class="carrousel_ecran">
+                        <a class="liencarous" href="./article3.html">
+                            <img class="imagecar" src="public/img/maternité1.webp" alt="image ecran 3">
+                            <figcaption>Un renouveau révolutionnaire</figcaption>
+                        </a>
+                    </div>
+                    <div id="ecran-4" class="carrousel_ecran">
+                        <a class="liencarous" href="./article4.html">
+                            <img class="imagecar" src="public/img/houston1.webp" alt="image ecran 4">
+                            <figcaption>Fusion d'Art et d'Architecture</figcaption>
+                        </a>
+                    </div>
+                    <div id="ecran-5" class="carrousel_ecran">
+                        <a class="liencarous" href="./article5.html">
+                            <img class="imagecar" src="public/img/madrid1.webp" alt="image ecran 5">
+                            <figcaption>Fusion d'Art et d'Architecture</figcaption>
+                        </a>
+                    </div>
+                    <div id="ecran-6" class="carrousel_ecran">
+                        <a class="liencarous" href="./article6.html">
+                            <img class="imagecar" src="public/img/atocha1.webp" alt="image ecran 5">
+                            <figcaption>Fusion d'Art et d'Architecture</figcaption>
+                        </a>
+                    </div>
+                    <div id="ecran-7" class="carrousel_ecran">
+                        <a class="liencarous" href="./article7.html">
+                            <img class="imagecar" src="public/img/davis1.webp" alt="image ecran 5">
+                            <figcaption>Un Sanctuaire de Créativité</figcaption>
+                        </a>
+                    </div>
+                    <div id="ecran-8" class="carrousel_ecran">
+                        <a class="liencarous" href="./article8.html">
+                            <img class="imagecar" src="public/img/los1.webp" alt="image ecran 5">
+                            <figcaption>Symbole d'Architecture Sacrée</figcaption>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
         <h2>De façon chronologique</h2>
