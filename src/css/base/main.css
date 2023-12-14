@@ -272,7 +272,17 @@ body {
     height: 100px;
     z-index: 1;
     position: absolute;
-    top: 90%;
+    top: 87.5%;
+    margin-left: 8px;
+
+}
+
+.rectanglebleu7 {
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    position: absolute;
+    top: 220%;
     margin-left: 8px;
 
 }
