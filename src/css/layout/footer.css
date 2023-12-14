@@ -1,0 +1,32 @@
+.footer {
+    background-color: #FAF7F2;
+    width: 100vw;
+}
+
+.footerband {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.logositef {
+    width: 60px;
+    height: 100px;
+    padding-left: 180px;
+
+}
+
+.titresitef {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 20px;
+    color: #4E4F55;
+
+}  
+
+.textf1 {
+    font-family: 'Marmelad', sans-serif;
+    font-size: 15px;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

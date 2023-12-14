@@ -83,33 +83,37 @@
     text-decoration: none;
     color: #ffffff;
     font-size: 35px;
-    margin-left: 160px;
+    margin-left: 155px;
+    font-family: 'Marmelad', sans-serif;
 }
 
 .textmenu2 {
     text-decoration: none;
     color: #ffffff;
     font-size: 35px;
-    margin-left: 85px;
+    margin-left: 70px;
+    font-family: 'Marmelad', sans-serif;
 }
 
 .textmenu3 {
     text-decoration: none;
     color: #ffffff;
     font-size: 35px;
-    margin-left: 117px;
+    margin-left: 112px;
+    font-family: 'Marmelad', sans-serif;
 }
 
 .textmenu4 {
     text-decoration: none;
     color: #ffffff;
     font-size: 35px;
-    margin-left: 151px;
+    margin-left: 145px;
+    font-family: 'Marmelad', sans-serif;
 }
 
 .lignemenu {
    width: 190px;
-   margin-left: 75px;
+   margin-left: 78px;
    margin-bottom: 25px;
 }
 
@@ -141,9 +145,15 @@
 .reseau4 {
     text-decoration: none;
     margin-right: 15px;
-    width: 32px;
+    width: 38px;
 }
 
+.ligneh {
+    width: 90vw;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+}
 
 .actif {
     right: 0;
