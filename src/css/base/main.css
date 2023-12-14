@@ -327,6 +327,25 @@ body {
 
 }
 
+.rectanglebleu12 {
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    position: absolute;
+    top: 94%;
+    margin-left: 8px;
+
+}
+
+.rectanglebleu13 {
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    position: absolute;
+    top: 237%;
+    margin-left: 8px;
+
+}
 
 
 
