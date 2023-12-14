@@ -53,17 +53,97 @@
     top: 0;
 }
 
-
-.menuitem {
-    display: block;
-    padding: 10px;
-    color: white;
+.croixmenu {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 50px;
+    cursor: pointer;
+    filter: invert(1);
+    margin-right: 20px;
 
 }
 
-.textmenu {
-    text-decoration: none;    
+.ticketmenu {
+    top: 20px;
+    right: 10px;
+    width: 45px;
+    cursor: pointer;
+    filter: invert(1);
+    margin-top: 22px;
+    margin-left: 225px;
 }
+
+.menulist {
+        list-style-type: none;
+        margin-top: 50px;
+
+}
+.textmenu1 {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 35px;
+    margin-left: 160px;
+}
+
+.textmenu2 {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 35px;
+    margin-left: 85px;
+}
+
+.textmenu3 {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 35px;
+    margin-left: 117px;
+}
+
+.textmenu4 {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 35px;
+    margin-left: 151px;
+}
+
+.lignemenu {
+   width: 190px;
+   margin-left: 75px;
+   margin-bottom: 25px;
+}
+
+.reseaulist {
+    list-style-type: none;
+    margin-top: 70px;
+    filter: invert(1);
+}
+
+.reseau1 {
+    text-decoration: none;
+    margin-right: 15px;
+    width: 32px;
+
+}
+
+.reseau2 {
+    text-decoration: none;
+    margin-right: 15px;
+    width: 32px;
+}
+
+.reseau3 {
+    text-decoration: none;
+    margin-right: 15px;
+    width: 32px;
+}
+
+.reseau4 {
+    text-decoration: none;
+    margin-right: 15px;
+    width: 32px;
+}
+
 
 .actif {
     right: 0;

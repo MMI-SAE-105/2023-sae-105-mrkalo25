@@ -11,47 +11,50 @@
 <body x-data="{menuIsOpen: false}">
     <header class="header">
         <nav class="menu"
-        :class="{actif: menuIsOpen}"
-        >
-            <img src="public/icones/ticket.svg" alt="billeterie">
-            <img src="public/icones/croix.svg" alt="croix menu"
-            @click="menuIsOpen = !menuIsOpen"
-            >
-            <ul>
-                <li class="menuitem">
-                    <a class="textmenu" href="/">Oeuvre</a>
+        :class="{actif: menuIsOpen}">
+        <div>
+            <img class="ticketmenu" src="public/icones/ticket.svg" alt="billeterie">
+            <img class="croixmenu" src="public/icones/croix.svg" alt="croix menu"
+            @click="menuIsOpen = !menuIsOpen">
+        </div>
+            <ul class="menulist">
+                <li>
+                    <a class="textmenu1" href="/">Oeuvre</a>
                     <img  src="public/icones/ligne.svg" alt="ligne">
                 </li>
                 <hr class="lignemenu">
-                <li class="menuitem">
-                    <a class="textmenu" href="/">Nos horaires</a>
+                <li>
+                    <a class="textmenu2" href="/">Nos horaires</a>
                 </li>
                 <hr class="lignemenu">
-                <li class="menuitem">
-                    <a class="textmenu" href="/">Nos Tarifs</a>
-                    <img src="public/icones/ligne.svg" alt="ligne">
-                </li>
-                <hr class="lignemenu">
-                <li class="menuitem">
-                    <a class="textmenu" href="/">Contact</a>
+                <li>
+                    <a class="textmenu3" href="/">Nos Tarifs</a>
                     <img src="public/icones/ligne.svg" alt="ligne">
                 </li>
                 <hr class="lignemenu">
                 <li>
-                <a href="https://fr-fr.facebook.com/FondationCartier/">
-                    <img src="public/icones/facebook.svg" alt="icone facebook">
+                    <a class="textmenu4" href="/">Contact</a>
+                    <img src="public/icones/ligne.svg" alt="ligne">
+                </li>
+                <hr class="lignemenu">
+            </ul>
+            <ul class="reseaulist">
+                <li>
+                <a class="reseau1" href="https://fr-fr.facebook.com/FondationCartier/">
+                    <img class="reseau1" src="public/icones/facebook.svg" alt="icone facebook">
                 </a>
-                <a href="https://www.instagram.com/fondationcartier/">
-                    <img src="public/icones/instagram.svg" alt="icone instagram">
+                <a class="reseau2" href="https://www.instagram.com/fondationcartier/">
+                    <img class="reseau2" src="public/icones/instagram.svg" alt="icone instagram">
                 </a>                   
-                <a href="https://twitter.com/Fond_Cartier">
-                    <img src="public/icones/twitter1.svg" alt="icone twitter">
+                <a class="reseau3"  href="https://twitter.com/Fond_Cartier">
+                    <img  class="reseau3" src="public/icones/twitter1.svg" alt="icone twitter">
                 </a>
-                <a href="https://www.youtube.com/user/fondationcartier">
-                    <img src="public/icones/youtube1.svg" alt="icone youtube">
+                <a class="reseau4" href="https://www.youtube.com/user/fondationcartier">
+                    <img class="reseau4" src="public/icones/youtube1.svg" alt="icone youtube">
                 </a>
                 </li>
             </ul>
+            
         </nav>
         <div class="headband">
             <img class="logosite" src="public/icones/logosite.svg" alt="logo site">
@@ -66,12 +69,12 @@
     <img src="public/icones/ligne.svg" alt="ligne">
     <main>
         <h1>Découvrez l'architecture qui inspire votre monde</h1>
-        <a>
+        <a href="/">
             Nos horaires
         </a>
-        <button>
+        <a href="/">
             Nos tarifs
-        </button>
+        </a>
         <h2>
             Du 13 avril au 23 juin 2024 À Fondation Cartier; 261 Bd Raspail, 75014 Paris
         </h2>
