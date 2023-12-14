@@ -1,10 +1,48 @@
+.header {
+    background-color: #FAF7F2;
+    width: 100vw;
+} 
+
+.headband {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+
+}
+
+.logosite {
+    width: 60px;
+    height: 100px;
+    padding-left: 20px;
+    padding-right: 9px;
+}
+
+.titresite {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 20px;
+    color: #4E4F55;
+    margin-left: 5px;
+    padding-right: 40px;
+
+
+}
 .menulogo {
-    background-color: black;
-    padding: 5px;
+    background-color: #4E4F55;
+    padding: 10px;
+    width: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 40px;
+}
+
+.billeterie {
+    padding-right: 10px;
+    width: 36px;
+
 }
 .menu {
     position: fixed;
-    background-color: red;
+    background-color: #4E4F55;
 
     width: 100vw;
     height: 100vh;
@@ -13,6 +51,18 @@
     transition: right 0.5s;
 
     top: 0;
+}
+
+
+.menuitem {
+    display: block;
+    padding: 10px;
+    color: white;
+
+}
+
+.textmenu {
+    text-decoration: none;    
 }
 
 .actif {
