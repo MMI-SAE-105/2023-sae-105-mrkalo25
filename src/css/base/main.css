@@ -4,39 +4,46 @@ body {
     
 }
 .titre {
-    margin-left: 77px;
-    margin-right: 77px;
+    margin-left: 20px;
     font-size: 35px;
     font-weight: 500;
-    margin-top: 0px;
+    margin-bottom: 30px;
     font-family: 'Marmelad', sans-serif;
 }   
 
 .boutonhead1 {
     background-color: #C4DCF1;
+    color: #000000;
     text-decoration: none;
-    margin-right: 10px;
-    width: 130px;
-    padding: 3px;
-    margin-left: 45px;
-    font-size: 20px;
+    margin-left: 30px;
+    margin-right: 20px;
+    width: 100px;
+    padding: 10px;
+    font-size: 25px;
     border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border: black 2px solid;
+    
 }
 
 .boutonhead2 {
     background-color: #C4DCF1;
-    text-decoration: none;
-    margin-right: 10px;
-    width: 130px;
-    padding: 3px;
-    font-size: 20px;
-    border-radius: 10px;
+        color: #000000;
+        text-decoration: none;
+        width: 100px;
+        padding: 10px;
+        font-size: 25px;
+        border-radius: 10px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        border: black 2px solid;
 }
 
 .date {
     margin-left: 15px;
     margin-right: 70px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .imageplein {
@@ -51,7 +58,7 @@ body {
 .ligneb {
     width: 90vw;
     margin-top: 25px;
-    padding-bottom: 15px;
+    margin-bottom: 10px;
     margin-left: 18px;
 }
 
@@ -60,6 +67,7 @@ body {
     margin-right: 150px;
     font-size: 35px;
     font-family: 'Marmelad', sans-serif;
+    margin-top: 5px;
 }
 
 .textebody {
@@ -82,6 +90,7 @@ body {
     border-radius: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
+
 }
 
 .carrousel_parent-ecrans {
@@ -151,4 +160,28 @@ body {
 .liencarous {
     text-decoration: none;
     color: black;
+   
+}
+
+.liste_horaires{
+    display: flex;
+    list-style-type: none;
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin-top: 10px;
+    font-size: 17px;
+    
+}
+
+.listhoraire1 {
+    list-style-type: none;
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin-left: 0px;
+    padding-left: 30px;
+
+}
+
+.listhoraire2 {
+    list-style-type: none;
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin-left: 110px;
 }
