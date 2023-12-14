@@ -2,3 +2,23 @@
     background-color: black;
     padding: 5px;
 }
+.menu {
+    position: fixed;
+    background-color: red;
+
+    width: 100vw;
+    height: 100vh;
+
+    right: -100%;
+    transition: right 0.5s;
+
+    top: 0;
+}
+
+.actif {
+    right: 0;
+}
+
+img {
+    width: 20px;
+}

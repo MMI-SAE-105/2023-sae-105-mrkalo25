@@ -8,11 +8,15 @@
     <link rel="icon" href="./public/icones/logosite.svg">
     <title>ARCHIARTZ</title>
 </head>
-<body>
+<body x-data="{menuIsOpen: false}">
     <header>
-        <div>
+        <nav class="menu"
+        :class="{actif: menuIsOpen}"
+        >
             <img src="public/icones/ticket.svg" alt="billeterie">
-            <img src="public/icones/croix.svg" alt="croix menu">
+            <img src="public/icones/croix.svg" alt="croix menu"
+            @click="menuIsOpen = !menuIsOpen"
+            >
             <ul>
                 <li>
                     <a href="/">Oeuvre</a>
@@ -45,20 +49,23 @@
                 </a>
                 </li>
             </ul>
-        </div>
+        </nav>
         <div>
             <img src="public/icones/logosite.svg" alt="logo site">
             <p>ARCHIARTZ</p>
             <img src="public/icones/ticket.svg" alt="billeterie logo">
-            <img class="menulogo" src="public/icones/menu.svg" alt="menu logo">
+            <img 
+            class="menulogo" src="public/icones/menu.svg" alt="menu logo"
+            @click="menuIsOpen = !menuIsOpen"
+            >
             <img src="public/icones/ligne.svg" alt="ligne">
         </div>
     </header>
     <main>
         <h1>Découvrez l'architecture qui inspire votre monde</h1>
-        <button>
+        <a>
             Nos horaires
-        </button>
+        </a>
         <button>
             Nos tarifs
         </button>
