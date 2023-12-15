@@ -6,8 +6,8 @@
     <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="/src/css/style.css">
-    <link rel="icon" href="./public/icones/logosite.svg">
-    <link rel="stylesheet" href="src/css/font/font.css">
+    <link rel="icon" href="/public/icones/logosite.svg">
+    <link rel="stylesheet" href="/src/css/style.css">
     <title>ARCHIARTZ</title>
 </head>
 <body x-data="{menuIsOpen: false}">
@@ -16,9 +16,9 @@
         :class="{actif: menuIsOpen}">
         <div>
             <a href="./404.html">
-                <img class="ticketmenu" src="public/icones/ticket.svg" alt="billeterie">
+                <img class="ticketmenu" src="/public/icones/ticket.svg" alt="billeterie">
             </a>
-            <img class="croixmenu" src="public/icones/croix.svg" alt="croix menu"
+            <img class="croixmenu" src="/public/icones/croix.svg" alt="croix menu"
             @click="menuIsOpen = !menuIsOpen">
         </div>
             <ul class="menulist">
@@ -30,34 +30,28 @@
                         <a class="textaccordeon" href="./article3.html">Maternité</a>
                         <a class="textaccordeon" href="./article4.html">Musée Houston</a>
                         <a class="textaccordeon" href="./article5.html">Musée Madrid</a>
-                        <a class="textaccordeon" href="./article6.html">Gare Atocha</a>
+                        <a class="textaccordeon" href=".//article6.html">Gare Atocha</a>
                         <a class="textaccordeon" href="./article7.html">Musée Davis</a>
                         <a class="textaccordeon" href="./article8.html">Cathédrale</a>
                     </p>
                 </li>
                 <li>
-                    <img class="lignemenu" src="public/icones/ligne.svg" alt="ligne">
+                    <img class="lignemenu" src="/public/icones/ligne.svg" alt="ligne">
                 </li>
                 <li>
                     <a class="textmenu2" href="./Horaires.html">Nos horaires</a>
                 </li>
                 <li>
-                    <img class="lignemenu" src="public/icones/ligne.svg" alt="ligne">
+                    <img class="lignemenu" src="/public/icones/ligne.svg" alt="ligne">
                 </li>
                 <li>
                     <a class="textmenu3" href="./Tarifs.html">Nos Tarifs</a>
                 </li>
                 <li>
-                    <img class="lignemenu" src="public/icones/ligne.svg" alt="ligne">
+                    <img class="lignemenu" src="/public/icones/ligne.svg" alt="ligne">
                 </li>
                 <li>
-                    <a class="textmenu4" href="-/">Galerie</a>
-                </li>
-                <li>
-                    <img class="lignemenu" src="public/icones/ligne.svg" alt="ligne">
-                </li>
-                <li>
-                    <a class="textmenu5" href="./contact.html">Contact</a>
+                    <a class="textmenu5" href="">Contact</a>
                 </li>
             </ul>
             <ul class="reseaulist">
