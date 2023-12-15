@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="icon" href="./public/icones/logosite.svg">
+    <title>Rafael Moneo</title>
+</head>
+<body x-data="{menuIsOpen: false}">
+    <header class="header">
+        <nav class="menu" :class="{actif: menuIsOpen}">
+            <div>
+                <a href="./404.html">
+                    <img class="ticketmenu" src="public/icones/ticket.svg" alt="billeterie">
+                </a>
+                <img class="croixmenu" src="public/icones/croix.svg" alt="croix menu" @click="menuIsOpen = !menuIsOpen">
+            </div>
+            <ul class="menulist">
+                <li x-data="{ expanded: false }">
+                    <button class="textmenu1" @click="expanded = ! expanded">Oeuvre</button>
+                    <p class="blockaccordeon" x-show="expanded" x-collapse.duration.1000ms>
+                        <a class="textaccordeon" href="./article1.html"> Musée Mérida</a>
+                        <a class="textaccordeon" href="./article2.html">Bibliothèque</a>
+                        <a class="textaccordeon" href="./article3.html">Maternité</a>
+                        <a class="textaccordeon" href="./article4.html">Musée Houston</a>
+                        <a class="textaccordeon" href="./article5.html">Musée Madrid</a>
+                        <a class="textaccordeon" href="./article6.html">Gare Atocha</a>
+                        <a class="textaccordeon" href="./article7.html">Musée Davis</a>
+                        <a class="textaccordeon" href="./article8.html">Cathédrale</a>
+                    </p>
+                </li>
+                <li>
+                    <img class="lignemenu" src="public/icones/ligne.svg" alt="ligne">
+                </li>
+                <li>
+                    <a class="textmenu2" href="./Horaires.html">Nos horaires</a>
+                </li>
+                <li>
+                    <img class="lignemenu" src="public/icones/ligne.svg" alt="ligne">
+                </li>
+                <li>
+                    <a class="textmenu3" href="./Tarifs.html">Nos Tarifs</a>
+                </li>
+                <li>
+                    <img class="lignemenu" src="public/icones/ligne.svg" alt="ligne">
+                </li>
+                <li>
+                    <a class="textmenu4" href="-/">Galerie</a>
+                </li>
+                <li>
+                    <img class="lignemenu" src="public/icones/ligne.svg" alt="ligne">
+                </li>
+                <li>
+                    <a class="textmenu5" href="./contact.html">Contact</a>
+                </li>
+            </ul>
+            <ul class="reseaulist">
+                <li>
+                    <a class="reseau1" href="https://fr-fr.facebook.com/FondationCartier/">
+                        <img class="reseau1" src="public/icones/facebook.svg" alt="icone facebook">
+                    </a>
+                    <a class="reseau2" href="https://www.instagram.com/fondationcartier/">
+                        <img class="reseau2" src="public/icones/instagram.svg" alt="icone instagram">
+                    </a>
+                    <a class="reseau3" href="https://twitter.com/Fond_Cartier">
+                        <img class="reseau3" src="public/icones/twitter1.svg" alt="icone twitter">
+                    </a>
+                    <a class="reseau4" href="https://www.youtube.com/user/fondationcartier">
+                        <img class="reseau4" src="public/icones/youtube1.svg" alt="icone youtube">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="headband">
+            <a href="./index.html">
+                <img class="logosite" src="public/icones/logosite.svg" alt="logo site">
+            </a>
+            <p class="titresite">ARCHIARTZ</p>
+            <a href="./404.html">
+                <img class="billeterie" src="public/icones/ticket.svg" alt="billeterie logo">
+            </a>
+            <img class="menulogo" src="public/icones/menu.svg" alt="menu logo" @click="menuIsOpen = !menuIsOpen">
+        </div>
+        <img class="ligneh" src="public/icones/ligne.svg" alt="ligne">
+    </header>
+<main>
+    <div>
+        <img class="imagearchi" src="public/img/raf1.webp" alt="image archi 1">
+        <h1 class="titrearchi">Rafael Moneo, la créativité en personne</h1>
+    </div>
+    <img src="public/icones/ligne.svg" alt="ligne">
+    <p class="textebody">
+        Rafael Moneo est un célèbre architecte espagnol et lauréat du prix Pritzker 1996. Il est une figure emblématique de
+        l'architecture contemporaine. Né en 1937 à Tudela, en Espagne, Moneo a été largement salué pour sa capacité à mélanger
+        tradition et modernité dans ses créations architecturales.
+        Ses conceptions se distinguent par une profonde réflexion contextuelle, s'adaptant harmonieusement à l'environnement
+        urbain et aux paysages culturels. Moneo a développé un style qui transcende les époques, mettant en valeur l'histoire et
+        la culture de chaque lieu qu'il façonne.
+    </p>
+    <img class="imgbody" src="public/img/raf2.webp" alt="image archi 2">
+    <p class="textebody">
+        Ses œuvres célèbres incarnent cette vision unique, comme le Musée Extension du Prado à Madrid, où il a réussi à mélanger
+        l'ancien et le nouveau, en respectant l'identité historique tout en introduisant l'esthétique contemporaine. La
+        cathédrale de Los Angeles, également conçue par Moneo, démontre avec brio sa capacité à créer des espaces sacrés
+        empreints de spiritualité et de modernité.
+    </p>
+    <img class="imgbody" src="public/img/raf3.webp" alt="image archi 3">
+    <h2 class="soustitre">Un héritage moderne</h2>
+    <p class="textebody">
+        En tant qu'éducateur et enseignant, Moneo a également partagé sa passion pour l'architecture avec de nombreuses
+        générations d'étudiants. Ses contributions à la théorie architecturale et sa vision pédagogique ont laissé une marque
+        durable dans le domaine de l’architecture. L’héritage de Rafael Moneo réside dans sa capacité à fusionner l’ancien et
+        le moderne, en créant des espaces intemporels qui dialoguent avec leur environnement et transcendent les frontières du
+        temps grâce à la beauté de leur fonctionnalité. Ses réalisations continuent d'inspirer et de marquer l'histoire de
+        l'architecture
+    </p>
+    <footer class="footer">
+        <div class="footerpartie1">
+            <div class="textefooter">
+                <a class="nouscontacter" href="./contact.html">Nous contacter</a>
+                <p class="suive">Suivez-nous</p>
+            </div>
+            <div class="logofooter">
+                <a href="./index.html">
+                    <img class="logositef" src="public/icones/logosite.svg" alt="logo site">
+                </a>
+                <p class="titresitef">ARCHIARTZ</p>
+            </div>
+        </div>
+        <div>
+            <div class="reseaufooter">
+                <a class="facebook" href="https://fr-fr.facebook.com/FondationCartier/">
+                    <img class="imgfacebook" src="public/icones/facebook.svg" alt="icone facebook">
+                </a>
+                <a class="instagram" href="https://www.instagram.com/fondationcartier/">
+                    <img class="imginstagram" src="public/icones/instagram.svg" alt="icone instagram">
+                </a>
+                <a class="twitter" href="https://twitter.com/Fond_Cartier">
+                    <img class="imgtwitter" src="public/icones/twitter1.svg" alt="icone twitter">
+                </a>
+                <a class="youtube" href="https://www.youtube.com/user/fondationcartier">
+                    <img class="imgyoutube" src="public/icones/youtube1.svg" alt="icone youtube">
+                </a>
+                <a href="./404.html">
+                    <img class="billeteriefooter" src="public/icones/ticket.svg" alt="billeterie">
+                </a>
+            </div>
+        </div>
+    </footer>
+</main>
+</body>
+</html>
