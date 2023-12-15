@@ -186,6 +186,7 @@ body {
 
 .soustitrearticle {
     display: flex;
+    position: relative;
 }
 
 .soustitreart {
@@ -194,7 +195,6 @@ body {
     font-size: 35px;
     font-family: 'Marmelad', sans-serif;
     margin-top: 5px;
-    position: relative;
     z-index: 2;
     margin-bottom: 0px;
 }
@@ -204,7 +204,7 @@ body {
     height: 100px;
     z-index: 1;
     position: absolute;
-    top: 90%;
+    top: -1rem;
     margin-left: 8px;
 
 }
