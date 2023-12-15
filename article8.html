@@ -19,8 +19,18 @@
                 <img class="croixmenu" src="public/icones/croix.svg" alt="croix menu" @click="menuIsOpen = !menuIsOpen">
             </div>
             <ul class="menulist">
-                <li>
-                    <a class="textmenu1" href="/">Oeuvre</a>
+                <li x-data="{ expanded: false }">
+                    <button class="textmenu1" @click="expanded = ! expanded">Oeuvre</button>
+                    <p class="blockaccordeon" x-show="expanded" x-collapse.duration.1000ms>
+                        <a class="textaccordeon" href="./article1.html"> Musée Mérida</a>
+                        <a class="textaccordeon" href="./article2.html">Bibliothèque</a>
+                        <a class="textaccordeon" href="./article3.html">Maternité</a>
+                        <a class="textaccordeon" href="./article4.html">Musée Houston</a>
+                        <a class="textaccordeon" href="./article5.html">Musée Madrid</a>
+                        <a class="textaccordeon" href="./article6.html">Gare Atocha</a>
+                        <a class="textaccordeon" href="./article7.html">Musée Davis</a>
+                        <a class="textaccordeon" href="./article8.html">Cathédrale</a>
+                    </p>
                 </li>
                 <li>
                     <img class="lignemenu" src="public/icones/ligne.svg" alt="ligne">
@@ -38,7 +48,13 @@
                     <img class="lignemenu" src="public/icones/ligne.svg" alt="ligne">
                 </li>
                 <li>
-                    <a class="textmenu4" href="./contact.html">Contact</a>
+                    <a class="textmenu4" href="-/">Galerie</a>
+                </li>
+                <li>
+                    <img class="lignemenu" src="public/icones/ligne.svg" alt="ligne">
+                </li>
+                <li>
+                    <a class="textmenu5" href="./contact.html">Contact</a>
                 </li>
             </ul>
             <ul class="reseaulist">
