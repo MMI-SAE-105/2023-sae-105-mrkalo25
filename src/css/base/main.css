@@ -29,15 +29,15 @@ body {
 
 .boutonhead2 {
     background-color: #C4DCF1;
-        color: #000000;
-        text-decoration: none;
-        width: 100px;
-        padding: 10px;
-        font-size: 25px;
-        border-radius: 10px;
-        margin-top: 20px;
-        margin-bottom: 30px;
-        border: black 2px solid;
+    color: #000000;
+    text-decoration: none;
+    width: 100px;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: black 2px solid;
 }
 
 .date {
