@@ -1,18 +1,12 @@
 .footer {
     background-color: #4E4F55;
     width: 100vw;
-}
-
-.footerband {
-    display: flex;
-    justify-content: baseline;
-    align-items: center;
+    color: #ffffff;
 }
 
 .logositef {
     width: 60px;
     height: 100px;
-    padding-left: 180px;
 
 }
 
@@ -20,13 +14,94 @@
     font-family: 'Nanum Myeongjo', serif;
     font-size: 20px;
     color: #ffffff;
+    margin-left: 10px;
+    padding-top: 15px;
 
 }  
 
-.textf1 {
-    font-family: 'Marmelad', sans-serif;
-    font-size: 15px;
-    margin-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.footerpartie1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
+.textefooter {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+    
+}
+
+.nouscontacter {
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+.suive {
+    margin: 0;
+}
+
+.logofooter {
+    display: flex;
+    padding-top: 15px;
+
+    
+}
+
+.reseaufooter {
+    display: flex;
+    filter: invert(1);
+    margin-left: 10px;
+    padding-top: 13px;
+
+}
+
+.facebook {
+    margin-right: 15px;
+    height: 20px;
+}
+
+.imgfacebook {
+    width: 30px;
+}
+
+.instagram {
+    margin-right: 15px;
+    height: 20px;
+    margin-top: 1px;
+}
+
+.imginstagram {
+    width: 30px;
+}
+
+.twitter {
+    margin-right: 15px;
+    height: 20px;
+    margin-top: 2px;
+}
+
+.imgtwitter {
+    width: 30px;
+}
+
+.youtube {
+    padding-top: 2.5px;
+    margin-right: 70px;
+    height: 20px;
+    margin-top: 2px;
+}
+
+.imgyoutube {
+    width: 30px;
+}
+
+.billeteriefooter {
+   width: 50px;
+   padding-bottom: 30px;
+   padding-top: 0px;
+
+}
+
