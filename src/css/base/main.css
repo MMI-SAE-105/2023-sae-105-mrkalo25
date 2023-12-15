@@ -209,8 +209,6 @@ body {
 
 }
 
-
-
 .soustitrearticle {
     display: flex;
 }
@@ -228,154 +226,14 @@ body {
 }
 
 .rectanglebleu2 {
-    width: 66px;
-    height: 92px;
+    width: 70px;
+    height: 70px;
     z-index: 1;
     position: absolute;
-    top: 220%;
-    margin-left: 8px;
-    
-}
-
-.rectanglebleu3 {
-    width: 100px;
-    height: 100px;
-    z-index: 1;
-    position: absolute;
-    top: 97%;
+    top: 0rem;
     margin-left: 8px;
 
-}
 
-.rectanglebleu4 {
-    width: 100px;
-    height: 100px;
-    z-index: 1;
-    position: absolute;
-    top: 226%;
-    margin-left: 8px;
-
-}
-
-.rectanglebleu5 {
-    width: 100px;
-    height: 100px;
-    z-index: 1;
-    position: absolute;
-    top: 90%;
-    margin-left: 8px;
-
-}
-
-.rectanglebleu6 {
-    width: 100px;
-    height: 100px;
-    z-index: 1;
-    position: absolute;
-    top: 87.5%;
-    margin-left: 8px;
-
-}
-
-.rectanglebleu7 {
-    width: 100px;
-    height: 100px;
-    z-index: 1;
-    position: absolute;
-    top: 220%;
-    margin-left: 8px;
-
-}
-
-.rectanglebleu8 {
-    width: 100px;
-    height: 100px;
-    z-index: 1;
-    position: absolute;
-    top: 94%;
-    margin-left: 8px;
-
-}
-
-.rectanglebleu9 {
-    width: 100px;
-    height: 100px;
-    z-index: 1;
-    position: absolute;
-    top: 230%;
-    margin-left: 8px;
-
-}
-
-.rectanglebleu10 {
-    width: 100px;
-    height: 100px;
-    z-index: 1;
-    position: absolute;
-    top: 94%;
-    margin-left: 8px;
-
-}
-
-.rectanglebleu11 {
-    width: 100px;
-    height: 100px;
-    z-index: 1;
-    position: absolute;
-    top: 223.5%;
-    margin-left: 8px;
-
-}
-
-.rectanglebleu12 {
-    width: 100px;
-    height: 100px;
-    z-index: 1;
-    position: absolute;
-    top: 94%;
-    margin-left: 8px;
-
-}
-
-.rectanglebleu13 {
-    width: 100px;
-    height: 100px;
-    z-index: 1;
-    position: absolute;
-    top: 237%;
-    margin-left: 8px;
-
-}
-
-.rectanglebleu14 {
-    width: 100px;
-    height: 100px;
-    z-index: 1;
-    position: absolute;
-    top: 94%;
-    margin-left: 8px;
-
-}
-
-.rectanglebleu15 {
-    width: 100px;
-    height: 100px;
-    z-index: 1;
-    position: absolute;
-    top: 183.5%;
-    margin-left: 8px;
-
-}
-
-.rectanglebleu16 {
-    width: 100px;
-    height: 100px;
-    z-index: 1;
-    position: absolute;
-    top: 323%;
-    margin-left: 8px;
-
-}
 
 
 
