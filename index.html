@@ -21,23 +21,25 @@
             <ul class="menulist">
                 <li>
                     <a class="textmenu1" href="/">Oeuvre</a>
-                    <img  src="public/icones/ligne.svg" alt="ligne">
                 </li>
-                <hr class="lignemenu">
+                <li>
+                    <img class="lignemenu" src="public/icones/ligne.svg" alt="ligne">
+                </li>
                 <li>
                     <a class="textmenu2" href="./Horaires.html">Nos horaires</a>
                 </li>
-                <hr class="lignemenu">
+                <li>
+                    <img class="lignemenu" src="public/icones/ligne.svg" alt="ligne">
+                </li>
                 <li>
                     <a class="textmenu3" href="./Tarifs.html">Nos Tarifs</a>
-                    <img src="public/icones/ligne.svg" alt="ligne">
                 </li>
-                <hr class="lignemenu">
+                <li>
+                    <img class="lignemenu" src="public/icones/ligne.svg" alt="ligne">
+                </li>
                 <li>
                     <a class="textmenu4" href="./contact.html">Contact</a>
-                    <img src="public/icones/ligne.svg" alt="ligne">
                 </li>
-                <hr class="lignemenu">
             </ul>
             <ul class="reseaulist">
                 <li>
@@ -101,61 +103,61 @@
                 }">
                 <button class="carrousel_btn carrousel_btn-avant" aria-label="slideprécedant"
                     @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth">
-                    &lt
+                    &lt;
                 </button>
                 <button class="carrousel_btn carrousel_btn-apres" aria-label="slidesuivant"
                     @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">
-                    &gt
+                    &gt;
                 </button>
                 <div class="carrousel_parent-ecrans" x-ref="parent"
                     @scroll.debounce.250ms.passive="hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
                     <div id="ecran-1" class="carrousel_ecran">
                         <a class="liencarous" href="./article1.html">
                             <img class="imagecar" src="public/img/Mérida1.webp"  alt="image ecran 1">
-                            <figcaption>Fenêtre sur l'Empire Antique</figcaption>
                         </a>
+                        <p>Fenêtre sur l'Empire Antique</p>
                     </div>
                     <div id="ecran-2" class="carrousel_ecran">
                         <a class="liencarous" href="./article2.html">
                             <img class="imagecar" src="public/img/bibliothèque1.webp" alt="image ecran 2">
-                            <figcaption>Un Sanctuaire de Connaissances</figcaption>
                         </a>
+                        <p>Un Sanctuaire de Connaissances</p>
                     </div>
                     <div id="ecran-3" class="carrousel_ecran">
                         <a class="liencarous" href="./article3.html">
                             <img class="imagecar" src="public/img/maternité1.webp" alt="image ecran 3">
-                            <figcaption>Un renouveau révolutionnaire</figcaption>
                         </a>
+                        <p>Un renouveau révolutionnaire</p>
                     </div>
                     <div id="ecran-4" class="carrousel_ecran">
                         <a class="liencarous" href="./article4.html">
                             <img class="imagecar" src="public/img/houston1.webp" alt="image ecran 4">
-                            <figcaption>Fusion d'Art et d'Architecture</figcaption>
                         </a>
+                        <p>Fusion d'Art et d'Architecture</p>
                     </div>
                     <div id="ecran-5" class="carrousel_ecran">
                         <a class="liencarous" href="./article5.html">
                             <img class="imagecar" src="public/img/madrid1.webp" alt="image ecran 5">
-                            <figcaption>Fusion d'Art et d'Architecture</figcaption>
                         </a>
+                        <p>Fusion d'Art et d'Architecture</p>
                     </div>
                     <div id="ecran-6" class="carrousel_ecran">
                         <a class="liencarous" href="./article6.html">
                             <img class="imagecar" src="public/img/atocha1.webp" alt="image ecran 5">
-                            <figcaption>Fusion d'Art et d'Architecture</figcaption>
                         </a>
+                        <p>Fusion d'Art et d'Architecture</p>
                     </div>
                     <div id="ecran-7" class="carrousel_ecran">
                         <a class="liencarous" href="./article7.html">
                             <img class="imagecar" src="public/img/davis1.webp" alt="image ecran 5">
-                            <figcaption>Un Sanctuaire de Créativité</figcaption>
                         </a>
+                        <p>Un Sanctuaire de Créativité</p>
                     </div>
                     <div id="ecran-8" class="carrousel_ecran">
                         <a class="liencarous" href="./article8.html">
                             <img class="imagecar" src="public/img/los1.webp" alt="image ecran 5">
-                            <figcaption>Symbole d'Architecture Sacrée</figcaption>
                         </a>
+                        <p>Symbole d'Architecture Sacrée</p>
                     </div>
                 </div>
             </div>

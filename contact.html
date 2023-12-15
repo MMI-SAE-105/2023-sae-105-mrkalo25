@@ -18,23 +18,25 @@
             <ul class="menulist">
                 <li>
                     <a class="textmenu1" href="/">Oeuvre</a>
-                    <img src="public/icones/ligne.svg" alt="ligne">
                 </li>
-                <hr class="lignemenu">
                 <li>
-                    <a class="textmenu2" href="/">Nos horaires</a>
+                    <img class="lignemenu" src="public/icones/ligne.svg" alt="ligne">
                 </li>
-                <hr class="lignemenu">
                 <li>
-                    <a class="textmenu3" href="/">Nos Tarifs</a>
-                    <img src="public/icones/ligne.svg" alt="ligne">
+                    <a class="textmenu2" href="./Horaires.html">Nos horaires</a>
                 </li>
-                <hr class="lignemenu">
                 <li>
-                    <a class="textmenu4" href="/">Contact</a>
-                    <img src="public/icones/ligne.svg" alt="ligne">
+                    <img class="lignemenu" src="public/icones/ligne.svg" alt="ligne">
                 </li>
-                <hr class="lignemenu">
+                <li>
+                    <a class="textmenu3" href="./Tarifs.html">Nos Tarifs</a>
+                </li>
+                <li>
+                    <img class="lignemenu" src="public/icones/ligne.svg" alt="ligne">
+                </li>
+                <li>
+                    <a class="textmenu4" href="./contact.html">Contact</a>
+                </li>
             </ul>
             <ul class="reseaulist">
                 <li>
@@ -64,25 +66,28 @@
         <img class="ligneh" src="public/icones/ligne.svg" alt="ligne">
     </header>
     <main>
-        <h1>Contact</h1>
-        <h2>Un problème ou une question ?Contactez nous !</h2>
-        <img src="public/icones/ligne.svg" alt="ligne">
-        <div>
-            <p>Nom prénom *</p>
-            <p>Nom prénom</p>
+        <div class="soustitrearticle">
+            <h2 class="soustitreart">Contact</h2>
+            <img class="rectanglebleu" src="public/icones/Rectanglebleu.svg" alt="rectangle">
         </div>
+        <h2 class="date">Un problème ou une question ?Contactez nous !</h2>
+        <img class="ligneh" src="public/icones/ligne.svg" alt="ligne">
         <div>
-            <p>Numéro de téléphone *</p>
-            <p>Numéro de téléphone</p>
-        </div>
-        <div>
-            <p>Adresse mail *</p>
-            <p>Adresse mail</p>
-        </div>
-        <div>
-            <p>Message *</p>
-            <p>Message</p>
-        </div>
+        <form action="">
+            <div>
+                <legend class="legende">Nom prénom *</legend>
+                <input type="text" name="name" id="name" placeholder="Nom prénom" class="ecriture">
+            </div>
+            <div>
+                <legend class="legende">Numéro de téléphone *</legend>
+                <input type="email" name="email" id="email" placeholder="Numéro de téléphone" class="ecriture">
+            </div>
+            <div>
+                <legend class="legende">Message *</legend>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" class="ecriture"></textarea>
+            </div>
+            <input type="submit" value="Envoyer" class="boutoncontact">
+        </form>
         <footer class="footer">
             <div class="footerpartie1">
                 <div class="textefooter">
