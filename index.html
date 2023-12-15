@@ -14,7 +14,9 @@
         <nav class="menu"
         :class="{actif: menuIsOpen}">
         <div>
-            <img class="ticketmenu" src="public/icones/ticket.svg" alt="billeterie">
+            <a href="./404.html">
+                <img class="ticketmenu" src="public/icones/ticket.svg" alt="billeterie">
+            </a>
             <img class="croixmenu" src="public/icones/croix.svg" alt="croix menu"
             @click="menuIsOpen = !menuIsOpen">
         </div>
@@ -63,7 +65,9 @@
                 <img class="logosite" src="public/icones/logosite.svg" alt="logo site">
             </a>
             <p class="titresite">ARCHIARTZ</p>
+            <a href="./404.html">
             <img class="billeterie" src="public/icones/ticket.svg" alt="billeterie logo">
+            </a>
             <img 
             class="menulogo" src="public/icones/menu.svg" alt="menu logo"
             @click="menuIsOpen = !menuIsOpen"
