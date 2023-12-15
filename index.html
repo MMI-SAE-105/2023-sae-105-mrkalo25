@@ -99,7 +99,7 @@
         <h2 class="soustitre">Les différentes oeuvres</h2>
         <div class="carrousel">
             <div class="carrousel" x-data="{
-                    hrefCourant: '#ecran-1' 
+                    hrefCourant: '#ecran---1' 
                 }">
                 <button class="carrousel_btn carrousel_btn-avant" aria-label="slideprécedant"
                     @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth">
@@ -111,7 +111,7 @@
                 </button>
                 <div class="carrousel_parent-ecrans" x-ref="parent"
                     @scroll.debounce.250ms.passive="hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
-                    <div id="ecran-1" class="carrousel_ecran">
+                    <div id="ecran-----1" class="carrousel_ecran">
                         <a class="liencarous" href="./article1.html">
                             <img class="imagecar" src="public/img/Mérida1.webp"  alt="image ecran 1">
                         </a>
@@ -143,19 +143,19 @@
                     </div>
                     <div id="ecran-6" class="carrousel_ecran">
                         <a class="liencarous" href="./article6.html">
-                            <img class="imagecar" src="public/img/atocha1.webp" alt="image ecran 5">
+                            <img class="imagecar" src="public/img/atocha1.webp" alt="image ecran 6">
                         </a>
                         <p>Fusion d'Art et d'Architecture</p>
                     </div>
                     <div id="ecran-7" class="carrousel_ecran">
                         <a class="liencarous" href="./article7.html">
-                            <img class="imagecar" src="public/img/davis1.webp" alt="image ecran 5">
+                            <img class="imagecar" src="public/img/davis1.webp" alt="image ecran 7">
                         </a>
                         <p>Un Sanctuaire de Créativité</p>
                     </div>
                     <div id="ecran-8" class="carrousel_ecran">
                         <a class="liencarous" href="./article8.html">
-                            <img class="imagecar" src="public/img/los1.webp" alt="image ecran 5">
+                            <img class="imagecar" src="public/img/los1.webp" alt="image ecran 8">
                         </a>
                         <p>Symbole d'Architecture Sacrée</p>
                     </div>
@@ -163,53 +163,70 @@
             </div>
         </div>
         <h2 class="soustitre">De façon chronologique</h2>
-        <p>Houston</p>
-        <div>
-            <p>Houston</p>
-            <img src="public/img/houston1.webp" alt="image 1 frise">
-            <p>1900</p>
-            <img src="public/icones/Rectanglefrise.svg" alt="rectancle frise">
-        </div>
-        <div>
-            <p>Mérida</p>
-            <img src="public/img/Mérida1.webp" alt="image 2 frise">
-            <p>1980</p>
-            <img src="public/icones/Rectanglefrise.svg" alt="rectangle frise">
-        </div>
-        <div>
-            <p>Gare Atocha</p>
-            <img src="public/img/atocha1.webp" alt="image 3 frise">
-            <p>1991</p>
-            <img src="public/icones/Rectanglefrise.svg" alt="rectangle frise">
-        </div>
-        <div>
-            <p>Madrid</p>
-            <img src="public/img/madrid1.webp" alt="image 4 frise">
-            <p>1992</p>
-            <img src="public/icones/Rectanglefrise.svg" alt="rectangle frise">
-        </div>
-        <div>
-            <p>Davis Museum</p>
-            <img src="public/img/davis1.webp" alt="image 5 frise">
-            <p>1993</p>
-            <img src="public/icones/Rectanglefrise.svg" alt="rectangle frise">
-        </div>
-        <div>
-            <p>Cathédrale</p>
-            <img src="public/img/los1.webp" alt="image 6 frise">
-            <p>2002</p>
-            <img src="public/icones/Rectanglefrise.svg" alt="rectangle frise">
-        </div>
-        <div>
-            <p>Maternité</p>
-            <img src="public/img/madrid1.webp" alt="image 7 frise">
-            <p>2003</p>
-            <img src="public/icones/Rectanglefrise.svg" alt="rectangle frise">
-        </div>
-        <div>
-            <p>Bibliothèque</p>
-            <img src="public/img/bibliothèque1.webp" alt="image 8 frise">
-            <p>2008</p>
+        <div class="carrousel">
+            <div class="carrousel" x-data="{
+                            hrefCourant: '#ecran-1' 
+                        }">
+                <button class="carrousel_btn carrousel_btn-avant" aria-label="slideprécedant"
+                    @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth">
+                    &lt;
+                </button>
+                <button class="carrousel_btn carrousel_btn-apres" aria-label="slidesuivant"
+                    @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">
+                    &gt;
+                </button>
+                <div class="carrousel_parent-ecrans" x-ref="parent"
+                    @scroll.debounce.250ms.passive="hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+                    <div id="ecran-1" class="carrousel_ecran">
+                        <a class="liencarous" href="./article1.html">
+                            <img class="imagecar" src="public/img/houston1.webp" alt="image ecran-1">
+                        </a>
+                        <p>1900</p>
+                    </div>
+                    <div id="ecran--2" class="carrousel_ecran">
+                        <a class="liencarous" href="./article2.html">
+                            <img class="imagecar" src="public/img/Mérida1.webp" alt="image ecran-2">
+                        </a>
+                        <p>1980</p>
+                    </div>
+                    <div id="ecran--3" class="carrousel_ecran">
+                        <a class="liencarous" href="./article3.html">
+                            <img class="imagecar" src="public/img/atocha1.webp" alt="image ecran-3">
+                        </a>
+                        <p>1991</p>
+                    </div>
+                    <div id="ecran--4" class="carrousel_ecran">
+                        <a class="liencarous" href="./article4.html">
+                            <img class="imagecar" src="public/img/madrid1.webp" alt="image ecran-4">
+                        </a>
+                        <p>1992</p>
+                    </div>
+                    <div id="ecran--5" class="carrousel_ecran">
+                        <a class="liencarous" href="./article5.html">
+                            <img class="imagecar" src="public/img/davis1.webp" alt="image ecran-5">
+                        </a>
+                        <p>1993</p>
+                    </div>
+                    <div id="ecran--6" class="carrousel_ecran">
+                        <a class="liencarous" href="./article6.html">
+                            <img class="imagecar" src="public/img/los1.webp" alt="image ecran-6">
+                        </a>
+                        <p>2002</p>
+                    </div>
+                    <div id="ecran--7" class="carrousel_ecran">
+                        <a class="liencarous" href="./article7.html">
+                            <img class="imagecar" src="public/img/maternité1.webp" alt="image ecran-7">
+                        </a>
+                        <p>2002</p>
+                    </div>
+                    <div id="ecran--8" class="carrousel_ecran">
+                        <a class="liencarous" href="./article8.html">
+                            <img class="imagecar" src="public/img/bibliothèque1.webp" alt="image ecran8">
+                        </a>
+                        <p>2008</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <footer class="footer">
             <div class="footerpartie1">
